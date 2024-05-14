@@ -1,12 +1,8 @@
 {
   "name": "@djbeaumont/carbon-schemes-api",
-  "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "David Beaumont <david@zorq.net>",
-  "license": "ISC"
+  }
 }
