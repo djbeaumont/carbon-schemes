@@ -1,12 +1,21 @@
 import express from 'express';
 
-const app = express();
-const port = 3000;
+import { getProjects, init } from './database';
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+async function main() {
+  await init();
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+  const app = express();
+  const port = 3000;
+
+  app.get('/', async (req, res) => {
+    const rows = await getProjects();
+    res.send('Hello World! ' + JSON.stringify(rows));
+  });
+
+  app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}/`);
+  });
+}
+
+main();
