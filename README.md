@@ -1,5 +1,12 @@
 ## Carbon schemes experiment
 
+### Running the project
+
+```shell
+pnpm i
+pnpm start
+```
+
 ### TODO
 
 - [x] Basic express API
