@@ -19,3 +19,5 @@ pnpm start
 - [ ] Set up integration test harness
 - [ ] Set up CI pipeline
 - [ ] Set up CD pipeline, e.g. to vercel etc
+- [ ] Set up customer tenancies
+- [ ] Implement authorization model for access to projects
