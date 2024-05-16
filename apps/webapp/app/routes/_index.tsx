@@ -15,9 +15,29 @@ export default function Index() {
       <h1>Welcome to Carbon Schemes!</h1>
 
       <h2>Projects</h2>
-      <ul>
-        {projects?.map((project) => <li key={project.id}>{project.id}</li>)}
-      </ul>
+
+      <table border={1}>
+        <thead>
+          <th>ID</th>
+          <th>URL</th>
+          <th>Status</th>
+          <th>Country</th>
+        </thead>
+        <tbody>
+          {projects?.map((project) => (
+            <tr key={project.id}>
+              <td>{project.id}</td>
+              <td>
+                <a href={project.url} rel="noreferrer nofollow">
+                  {project.url}
+                </a>
+              </td>
+              <td>{project.status}</td>
+              <td>{project.country}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
