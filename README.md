@@ -12,7 +12,8 @@ pnpm start
 - [x] Basic express API
 - [x] Scaffold remix app for visualisation
 - [ ] Use sample database file
-- [ ] Fetch data in client application
+- [x] Fetch data in client application
+- [ ] Shared types package
 - [ ] Make data look a little prettier
 - [ ] Require token authorization
 - [ ] Set up integration test harness
