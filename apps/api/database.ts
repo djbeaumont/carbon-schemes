@@ -15,7 +15,7 @@ export async function init(): Promise<void> {
 export async function getProjects(): Promise<Project> {
   return new Promise((resolve, reject) => {
     db.all('SELECT 1 as id', (err, rows) => {
-      // @ts-expect-error - ignore unknown query repsonse
+      // @ts-expect-error - ignore unknown query response
       return err ? reject(err) : resolve(rows);
     });
   });
